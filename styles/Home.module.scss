@@ -1,0 +1,107 @@
+.container {
+    .background {
+        background-color: #8567FF;
+        width: 100%;
+        height: 15rem;
+    }
+
+    form {
+
+        margin-top: -2% !important;
+        margin: 0 auto;
+
+        width: 43rem;
+
+
+        input:first-child {
+
+            margin-left: 0;
+
+        }
+
+        input {
+            margin-left: 1.5rem;
+            background-color: #F8F8F8;
+            outline: none;
+            border: 1px solid #DDDDDD;
+            padding: 1rem;
+
+            width: 20rem;
+
+            &::placeholder {
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        textarea {
+            margin-top: 1.5rem;
+
+            background-color: #F8F8F8;
+            outline: none;
+            border: 1px solid #DDDDDD;
+            resize: none;
+            padding: 1rem;
+
+            width: 41.5rem;
+            height: 10rem;
+
+            &::placeholder {
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        a {
+            margin-right: 1.5rem;
+            display: flex;
+            margin-top: 1rem;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            cursor: pointer;
+            color: white;
+            outline: none;
+            border: none;
+            padding: .8rem;
+            width: 10rem;
+            border-radius: .3rem;
+            background-color: #8567FF;
+            font-weight: 600;
+            transition: .5s ease;
+        }
+
+        a:hover {
+            background-color: #F8F8F8;
+            color: #8567FF;
+            border: 1px solid #8567FF;
+            
+        }
+
+    }
+
+}
+
+
+@media(max-width: 800px) {
+
+    .container {
+        form {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: -10% !important;
+            width: 100%;
+
+            input {
+                width: 100%;
+                margin-bottom: 1.5rem;
+                margin-left: 0;
+            }
+
+            textarea {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+}
